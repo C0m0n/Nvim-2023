@@ -19,3 +19,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 --neotree
 vim.keymap.set('n', '<leader>ft', ':Neotree<CR>')
+
+--Git 
+vim.keymap.set("n", '<leader>gs', ':Git<CR>')
