@@ -15,7 +15,6 @@ return{
 		name = "file",
 		f = {"find file"},
 		e = {"file explorer"},
-		t = {"file tree"},
 		g = {"grep string"},
 		b = {"grep buffers"},
 		h = {"help"},

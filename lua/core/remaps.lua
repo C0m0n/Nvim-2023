@@ -2,7 +2,7 @@
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 
 --File explorer
-vim.keymap.set('n', '<leader>fe', ':Ex<CR>')
+vim.keymap.set('n', '<leader>fe', ':Ex<CR>', {desc = 'File Explorer'})
 
 --Move blocks of code around
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -18,7 +18,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 
 --neotree
-vim.keymap.set('n', '<leader>ft', ':Neotree<CR>')
+vim.keymap.set('n', '<leader>ft', ':Neotree<CR>', {desc = 'Neotree'})
 
 --Git 
-vim.keymap.set("n", '<leader>gs', ':Git<CR>')
+vim.keymap.set("n", '<leader>gs', ':Neotree git_status<CR>', {desc = 'Git Window'})
