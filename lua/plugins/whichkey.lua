@@ -13,18 +13,11 @@ return{
 	wk.register({
 	    f = {
 		name = "file",
-		f = {"find file"},
-		e = {"file explorer"},
-		g = {"grep string"},
-		b = {"grep buffers"},
-		h = {"help"},
 	    },
 	    v = {
 		name = "lsp",
-		w = {name = "workspace", s = "symbol"},
-		d = {"diagnostics"},
-		c = {name = "code", a = "actions"}
-	    }
+	    },
+	    t = {name = 'trouble'}
 	}, {prefix = "<space>"})
     end
 }

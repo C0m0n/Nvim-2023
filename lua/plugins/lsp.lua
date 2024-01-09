@@ -9,7 +9,7 @@ return {
     },
     {
 	'williamboman/mason-lspconfig.nvim',
-	lazy = false, 
+	lazy = false,
 	opts = {
 	    autoinstall = true,
 	    ensure_installed = {"bashls", "clangd", "tsserver",  "lua_ls", "pyright", "rust_analyzer", "svelte"}
@@ -32,10 +32,10 @@ return {
 	    lspconfig.rust_analyzer.setup({capabilities = capabilities})
 	    lspconfig.svelte.setup({capabilities = capabilities})
 
-	    vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-	    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-	    vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-	    vim.keymap.set("n", "<leader>ca", function () vim.lsp.buf.code_action() end, {})
+	    vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc = 'Hover'})
+	    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {desc = 'Jump Definition'})
+	    vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {desc = 'Jump References'})
+	    vim.keymap.set("n", "<leader>ca", function () vim.lsp.buf.code_action() end, {desc = 'Code Action'})
 	end,
     },
 }
