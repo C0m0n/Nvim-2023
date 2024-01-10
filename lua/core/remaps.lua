@@ -22,4 +22,4 @@ vim.keymap.set('n', '<leader>ft', ':Neotree<CR>', {desc = 'Neotree'})
 
 --Git 
 vim.keymap.set("n", '<leader>gs', ':Neotree git_status<CR>', {desc = 'Git Window'})
-vim.keymap.set("n", '<leader>gl', ':Neotree git_status<CR>', {desc = 'Git Lazy'})
+vim.keymap.set("n", '<leader>gl', ':LazyGit<CR>', {desc = 'Git Lazy'})
