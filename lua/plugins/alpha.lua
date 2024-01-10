@@ -5,7 +5,7 @@ return
   config = function()
     require('dashboard').setup {
       -- config
-      theme = 'doom',
+      theme = 'hyper',
       config = {
 	  week_header = {
 	      enable = true,

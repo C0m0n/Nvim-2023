@@ -28,5 +28,6 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.linebreak = true
 vim.opt.wrap = false
+vim.opt.signcolumn = 'yes'
 
 
