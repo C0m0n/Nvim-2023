@@ -18,6 +18,8 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 
 local opts = {}
 
+package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
 
 require("lazy").setup("plugins")
 

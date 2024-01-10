@@ -16,6 +16,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- TODO: add primagean remaps 
 
 --neotree
 vim.keymap.set('n', '<leader>ft', ':Neotree<CR>', {desc = 'Neotree'})
@@ -23,3 +24,4 @@ vim.keymap.set('n', '<leader>ft', ':Neotree<CR>', {desc = 'Neotree'})
 --Git 
 vim.keymap.set("n", '<leader>gs', ':Neotree git_status<CR>', {desc = 'Git Window'})
 vim.keymap.set("n", '<leader>gl', ':LazyGit<CR>', {desc = 'Git Lazy'})
+

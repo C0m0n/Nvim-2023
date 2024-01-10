@@ -36,6 +36,9 @@ return {
 	    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {desc = 'Jump Definition'})
 	    vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {desc = 'Jump References'})
 	    vim.keymap.set("n", "<leader>ca", function () vim.lsp.buf.code_action() end, {desc = 'Code Action'})
+	    vim.keymap.set("n", '<leader>e', vim.diagnostic.open_float)
+	    vim.keymap.set("n", '<leader>p', vim.diagnostic.goto_prev)
+	    vim.keymap.set("n", '<leader>n', vim.diagnostic.goto_next)
 	end,
     },
 }
