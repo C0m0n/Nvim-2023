@@ -29,7 +29,16 @@ return {
 	    lspconfig.tsserver.setup({capabilities = capabilities})
 	    lspconfig.lua_ls.setup({capabilities = capabilities})
 	    lspconfig.pyright.setup({capabilities = capabilities})
-	    lspconfig.rust_analyzer.setup({capabilities = capabilities})
+	    lspconfig.gopls.setup({capabilities = capabilities})
+	    lspconfig.rust_analyzer.setup({
+		settings = {
+		    ['rust-analyzer'] = {
+			diagnostics = {
+			    enable = true;
+			}
+		    }
+		}
+	    })
 	    lspconfig.svelte.setup({capabilities = capabilities})
 
 	    vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc = 'Hover'})
