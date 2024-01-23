@@ -40,6 +40,7 @@ return {
 		}
 	    })
 	    lspconfig.svelte.setup({capabilities = capabilities})
+	    lspconfig.cssls.setup({capabilities = capabilities})
 
 	    vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc = 'Hover'})
 	    vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {desc = 'Jump Definition'})
