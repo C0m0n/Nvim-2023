@@ -1,9 +1,10 @@
 return { 
-    "bluz71/vim-moonfly-colors",
-    name = "moonfly", 
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox", 
     lazy = false,
     priority = 1000,
     config = function()
-	vim.cmd.colorscheme("moonfly")
+	vim.o.background = "dark" -- or "light" for light mode
+	vim.cmd.colorscheme("gruvbox")
     end
 }
